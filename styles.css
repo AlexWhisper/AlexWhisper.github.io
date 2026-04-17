@@ -1,0 +1,350 @@
+:root {
+  --bg: #f2efe7;
+  --surface: rgba(255, 252, 246, 0.82);
+  --surface-strong: #fffdf9;
+  --text: #1f1c17;
+  --muted: #676155;
+  --line: rgba(31, 28, 23, 0.12);
+  --accent: #a64b2a;
+  --accent-strong: #6f2f18;
+  --shadow: 0 24px 60px rgba(70, 47, 25, 0.12);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(220, 151, 84, 0.18), transparent 32%),
+    radial-gradient(circle at top right, rgba(90, 121, 140, 0.16), transparent 28%),
+    linear-gradient(180deg, #f7f3eb 0%, #ebe5d9 100%);
+}
+
+a {
+  color: inherit;
+}
+
+.page-shell {
+  width: min(1120px, calc(100% - 32px));
+  margin: 24px auto 48px;
+}
+
+.hero {
+  padding: 20px 24px 32px;
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  box-shadow: var(--shadow);
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+
+.brand {
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--muted);
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(280px, 0.9fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.hero-copy {
+  padding: 8px 4px;
+}
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: clamp(3rem, 6vw, 5.3rem);
+  line-height: 0.95;
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+
+.subtitle,
+.summary,
+.section-body p,
+.publication-authors,
+.publication-venue,
+.profile-meta dd {
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.subtitle {
+  max-width: 680px;
+  font-size: 1.15rem;
+  margin-bottom: 14px;
+}
+
+.summary {
+  max-width: 660px;
+  margin-bottom: 28px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.45);
+  text-decoration: none;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(31, 28, 23, 0.25);
+}
+
+.button.primary {
+  background: var(--accent);
+  color: #fffaf5;
+  border-color: transparent;
+}
+
+.button.primary:hover,
+.button.primary:focus-visible {
+  background: var(--accent-strong);
+}
+
+.profile-card,
+.content-section,
+.mini-card,
+.publication-item {
+  border: 1px solid var(--line);
+  background: var(--surface-strong);
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 28px;
+  border-radius: 24px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  width: 88px;
+  height: 88px;
+  border-radius: 24px;
+  background: linear-gradient(135deg, #d68361, #e8c88a);
+  color: #fffaf5;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 2.5rem;
+}
+
+.profile-meta {
+  margin: 0;
+  display: grid;
+  gap: 14px;
+}
+
+.profile-meta div {
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.profile-meta dt {
+  margin-bottom: 6px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.profile-meta dd {
+  margin: 0;
+}
+
+main {
+  margin-top: 24px;
+  display: grid;
+  gap: 20px;
+}
+
+.content-section {
+  display: grid;
+  grid-template-columns: 160px minmax(0, 1fr);
+  gap: 28px;
+  padding: 28px;
+  border-radius: 24px;
+  box-shadow: 0 12px 28px rgba(44, 28, 14, 0.04);
+}
+
+.section-label {
+  color: var(--accent);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.tag-list span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #f5eee5;
+  color: #624636;
+  font-size: 0.95rem;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.mini-card {
+  padding: 22px;
+  border-radius: 20px;
+}
+
+.publication-list {
+  display: grid;
+  gap: 14px;
+}
+
+.publication-item {
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 18px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.publication-year {
+  margin: 0;
+  font-family: "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.publication-authors,
+.publication-venue {
+  margin: 4px 0 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 8px 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+@media (max-width: 920px) {
+  .hero-grid,
+  .content-section,
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-section {
+    gap: 16px;
+  }
+
+  .section-label {
+    margin-bottom: -4px;
+  }
+}
+
+@media (max-width: 680px) {
+  .page-shell {
+    width: min(100% - 20px, 100%);
+    margin-top: 10px;
+  }
+
+  .hero,
+  .content-section {
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .topbar,
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .publication-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
