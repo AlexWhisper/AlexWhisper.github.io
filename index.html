@@ -3,193 +3,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="dark light">
   <title>Minghu Wang | Academic Homepage</title>
   <meta
     name="description"
-    content="A simple academic homepage for a PhD student, ready to deploy on GitHub Pages."
+    content="Academic homepage of Minghu Wang, focusing on information retrieval, NLP, and large language models."
   >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="hero">
-      <nav class="topbar">
-        <a class="brand" href="#top">Academic Homepage</a>
-        <div class="nav-links">
+  <header class="site-header">
+    <nav class="site-nav" aria-label="Primary">
+      <div class="nav-shell">
+        <a class="nav-logo" href="#top" aria-label="Go to top">MW</a>
+
+        <div class="nav-links desktop-nav">
           <a href="#about">About</a>
           <a href="#research">Research</a>
           <a href="#publications">Publications</a>
           <a href="#contact">Contact</a>
         </div>
-      </nav>
 
-      <section class="hero-grid" id="top">
+        <a class="nav-cta" href="mailto:wangminghu41@163.com">Email</a>
+
+        <details class="mobile-nav">
+          <summary>Menu</summary>
+          <div class="mobile-panel">
+            <a href="#about">About</a>
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#contact">Contact</a>
+            <a href="mailto:wangminghu41@163.com">Email</a>
+          </div>
+        </details>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section section-dark hero-section" id="top">
+      <div class="shell hero-shell">
         <div class="hero-copy">
-          <p class="eyebrow">PhD Student</p>
-          <h1>Minghu Wang</h1>
-          <p class="subtitle">
-            PhD candidate in Computer Science. I work on machine learning,
-            natural language processing, and trustworthy AI.
+          <p class="eyebrow">PhD Student / Hebei Normal University</p>
+          <h1 class="hero-title">Minghu Wang.</h1>
+          <p class="hero-subtitle">
+            Researching information retrieval, natural language processing,
+            and large language models.
           </p>
-          <p class="summary">
-            This is a minimal GitHub Pages demo for a personal academic site.
-            You can replace the text here with your own biography, research
-            interests, and recent work.
+          <p class="body-copy hero-body">
+            I build and evaluate language-centered systems that help people
+            retrieve, reason over, and generate information more effectively.
+            My academic interests sit at the intersection of IR, NLP, and LLM
+            applications for practical intelligent systems.
           </p>
+
           <div class="hero-actions">
-            <a class="button primary" href="mailto:your-email@example.com">Email</a>
-            <a class="button" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
-            <a class="button" href="#publications">Selected Work</a>
+            <a class="button button-primary" href="#publications">Selected Work</a>
+            <a class="button button-secondary" href="mailto:wangminghu41@163.com">Contact</a>
+          </div>
+
+          <div class="link-row">
+            <a
+              class="inline-link"
+              href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Scholar <span aria-hidden="true">&gt;</span>
+            </a>
+            <a
+              class="inline-link"
+              href="https://github.com/AlexWhisper/AlexWhisper"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub <span aria-hidden="true">&gt;</span>
+            </a>
           </div>
         </div>
 
-        <aside class="profile-card">
-          <div class="avatar-frame">
+        <div class="hero-visual">
+          <div class="portrait-stage">
             <img
-              class="avatar-image"
+              class="portrait-image"
               src="assets/avatar.jpg"
               alt="Portrait of Minghu Wang"
             >
           </div>
-          <dl class="profile-meta">
-            <div>
-              <dt>Affiliation</dt>
-              <dd>Hebei Normal University</dd>
-            </div>
-            <div>
-              <dt>Department</dt>
-              <dd>Computer Science</dd>
-            </div>
-            <div>
-              <dt>Location</dt>
-              <dd>Shijiazhuang, China</dd>
-            </div>
-            <div>
-              <dt>Keywords</dt>
-              <dd>Information Retrieval / NLP /LLM</dd>
-            </div>
-          </dl>
-        </aside>
-      </section>
-    </header>
 
-    <main>
-      <section class="content-section" id="about">
-        <div class="section-label">About</div>
-        <div class="section-body">
-          <h2>Short Bio</h2>
-          <p>
-            I am currently pursuing a PhD and building systems that make AI
-            models more reliable, interpretable, and useful in real-world
-            settings. My recent work focuses on language models, evaluation,
-            and human-centered AI.
-          </p>
-          <p>
-            Outside research, I enjoy reading papers, mentoring junior
-            students, and building small tools that improve academic
-            workflows.
-          </p>
-        </div>
-      </section>
-
-      <section class="content-section" id="research">
-        <div class="section-label">Research</div>
-        <div class="section-body">
-          <h2>Research Interests</h2>
-          <div class="tag-list">
-            <span>Natural Language Processing</span>
-            <span>Large Language Models</span>
-            <span>Evaluation</span>
-            <span>Trustworthy AI</span>
-            <span>Human-AI Interaction</span>
+          <div class="fact-grid">
+            <article class="fact-card">
+              <p class="fact-label">Affiliation</p>
+              <p class="fact-value">Hebei Normal University</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Department</p>
+              <p class="fact-value">Computer Science</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Location</p>
+              <p class="fact-value">Shijiazhuang, China</p>
+            </article>
+            <article class="fact-card">
+              <p class="fact-label">Focus</p>
+              <p class="fact-value">IR / NLP / LLM</p>
+            </article>
           </div>
-          <div class="card-grid">
-            <article class="mini-card">
-              <h3>Language Model Evaluation</h3>
-              <p>
-                Building better benchmarks and analysis methods for robust and
-                transparent model assessment.
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="about">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 class="section-title">
+            A research profile built with the clarity of a product page.
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="copy-block">
+            <p class="body-copy">
+              I am a PhD student in computer science with research interests in
+              information retrieval, natural language processing, and large
+              language models. I care about building systems that are not only
+              powerful, but also useful, reliable, and grounded in practical
+              research questions.
+            </p>
+            <p class="body-copy">
+              My work explores how retrieval and language modeling can be
+              combined to support better search, reasoning, and scientific
+              workflows. This page is intentionally simple: one place for my
+              background, my current directions, and the links that matter.
+            </p>
+          </div>
+
+          <div class="info-stack">
+            <article class="info-card">
+              <p class="info-label">Current Interests</p>
+              <h3>Retrieval-augmented language systems.</h3>
+              <p class="body-copy">
+                Designing pipelines that connect search, ranking, and language
+                generation in a coherent and trustworthy way.
               </p>
             </article>
-            <article class="mini-card">
-              <h3>Trustworthy Generation</h3>
-              <p>
-                Studying hallucination, calibration, and retrieval-assisted
-                reasoning for safer deployment.
-              </p>
-            </article>
-            <article class="mini-card">
-              <h3>AI for Research Workflows</h3>
-              <p>
-                Exploring tools that support literature review, summarization,
-                and collaborative scientific writing.
+
+            <article class="info-card">
+              <p class="info-label">What I Value</p>
+              <h3>Useful methods over ornamental complexity.</h3>
+              <p class="body-copy">
+                I am especially interested in evaluation, interpretability, and
+                research outcomes that translate into usable tools and systems.
               </p>
             </article>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="content-section" id="publications">
-        <div class="section-label">Publications</div>
-        <div class="section-body">
-          <h2>Selected Work</h2>
-          <div class="publication-list">
-            <article class="publication-item">
-              <p class="publication-year">2026</p>
-              <div>
-                <h3>Paper Title Goes Here</h3>
-                <p class="publication-authors">Your Name, Coauthor A, Coauthor B</p>
-                <p class="publication-venue">Conference or Journal Name</p>
-              </div>
-            </article>
-            <article class="publication-item">
-              <p class="publication-year">2025</p>
-              <div>
-                <h3>Another Representative Paper</h3>
-                <p class="publication-authors">Your Name, Coauthor C</p>
-                <p class="publication-venue">Conference or Journal Name</p>
-              </div>
-            </article>
-            <article class="publication-item">
-              <p class="publication-year">2024</p>
-              <div>
-                <h3>Preprint or Workshop Paper</h3>
-                <p class="publication-authors">Your Name, Coauthor D</p>
-                <p class="publication-venue">arXiv / Workshop</p>
-              </div>
-            </article>
-          </div>
+    <section class="section section-dark" id="research">
+      <div class="shell">
+        <div class="section-heading section-heading-centered">
+          <p class="eyebrow">Research</p>
+          <h2 class="section-title">
+            Three directions I am actively building.
+          </h2>
         </div>
-      </section>
 
-      <section class="content-section" id="contact">
-        <div class="section-label">Contact</div>
-        <div class="section-body">
-          <h2>Get in Touch</h2>
-          <p>
-            Email:
-            <a href="mailto:wangminghu41@163.com">Contact Me</a>
+        <div class="tile-grid">
+          <article class="research-tile">
+            <p class="tile-index">01</p>
+            <h3>Information Retrieval</h3>
+            <p class="body-copy">
+              Improving search, ranking, and retrieval pipelines so users can
+              access relevant evidence more precisely and efficiently.
+            </p>
+          </article>
+
+          <article class="research-tile">
+            <p class="tile-index">02</p>
+            <h3>Natural Language Processing</h3>
+            <p class="body-copy">
+              Studying how text understanding and generation methods can better
+              support real-world language tasks and academic workflows.
+            </p>
+          </article>
+
+          <article class="research-tile">
+            <p class="tile-index">03</p>
+            <h3>Large Language Models</h3>
+            <p class="body-copy">
+              Exploring LLM-centered systems with a focus on robustness,
+              evaluation, and reliable knowledge use in downstream applications.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-light" id="publications">
+      <div class="shell">
+        <div class="section-heading">
+          <p class="eyebrow">Publications</p>
+          <h2 class="section-title">
+            Selected work, profiles, and placeholders for your featured papers.
+          </h2>
+          <p class="body-copy section-body-intro">
+            For a complete and up-to-date list of publications, please visit my
+            Google Scholar profile. The cards below can be replaced with your
+            representative papers whenever you want.
           </p>
-          <p>
-            Google Scholar:
-            <a href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra" target="_blank" rel="noreferrer">
-              My Google Scholar Profile
+        </div>
+
+        <div class="publication-grid">
+          <article class="publication-card">
+            <p class="publication-kind">Featured Profile</p>
+            <h3>Google Scholar</h3>
+            <p class="publication-meta">Publications / Citations / Updates</p>
+            <p class="body-copy">
+              Browse the most current list of papers, citation counts, and
+              recent academic output.
+            </p>
+            <a
+              class="inline-link inline-link-light"
+              href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Visit profile <span aria-hidden="true">&gt;</span>
             </a>
+          </article>
+
+          <article class="publication-card">
+            <p class="publication-kind">Template</p>
+            <h3>Add your best conference paper</h3>
+            <p class="publication-meta">Authors / Conference / Year</p>
+            <p class="body-copy">
+              Replace this card with the work you most want visitors to see
+              first when they arrive on your homepage.
+            </p>
+          </article>
+
+          <article class="publication-card">
+            <p class="publication-kind">Template</p>
+            <h3>Add your strongest journal article</h3>
+            <p class="publication-meta">Authors / Journal / Year</p>
+            <p class="body-copy">
+              Use this space for a paper that represents the depth and maturity
+              of your ongoing research agenda.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="contact">
+      <div class="shell contact-shell">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">
+            Open to research discussion, collaboration, and academic exchange.
+          </h2>
+          <p class="body-copy">
+            If you would like to talk about information retrieval, NLP, LLMs,
+            or potential collaboration, feel free to reach out by email or
+            connect through my academic profiles.
           </p>
-          <p>
-            GitHub:
+
+          <div class="hero-actions">
+            <a class="button button-primary" href="mailto:wangminghu41@163.com">Email Me</a>
+            <a
+              class="button button-secondary"
+              href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Scholar Profile
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <div class="contact-item">
+            <p class="fact-label">Email</p>
+            <a href="mailto:wangminghu41@163.com">wangminghu41@163.com</a>
+          </div>
+          <div class="contact-item">
+            <p class="fact-label">GitHub</p>
             <a href="https://github.com/AlexWhisper/AlexWhisper" target="_blank" rel="noreferrer">
-              AlexWhisper
+              github.com/AlexWhisper
             </a>
-          </p>
+          </div>
+          <div class="contact-item">
+            <p class="fact-label">Affiliation</p>
+            <p>Hebei Normal University</p>
+          </div>
+          <div class="contact-item">
+            <p class="fact-label">Location</p>
+            <p>Shijiazhuang, China</p>
+          </div>
         </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>Last updated: April 2026</p>
-      <p>Built as a simple static site for GitHub Pages.</p>
-    </footer>
-  </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
