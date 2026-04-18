@@ -3,309 +3,220 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="color-scheme" content="dark light">
   <title>Minghu Wang | Academic Homepage</title>
   <meta
     name="description"
-    content="Academic homepage of Minghu Wang, focusing on information retrieval, NLP, and large language models."
+    content="Academic homepage of Minghu Wang, PhD student working on information retrieval, NLP, and large language models."
   >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <nav class="site-nav" aria-label="Primary">
-      <div class="nav-shell">
-        <a class="nav-logo" href="#top" aria-label="Go to top">MW</a>
-
-        <div class="nav-links desktop-nav">
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#publications">Publications</a>
-          <a href="#contact">Contact</a>
-        </div>
-
-        <a class="nav-cta" href="mailto:wangminghu41@163.com">Email</a>
-
-        <details class="mobile-nav">
-          <summary>Menu</summary>
-          <div class="mobile-panel">
-            <a href="#about">About</a>
-            <a href="#research">Research</a>
-            <a href="#publications">Publications</a>
-            <a href="#contact">Contact</a>
-            <a href="mailto:wangminghu41@163.com">Email</a>
-          </div>
-        </details>
-      </div>
+  <header class="topbar">
+    <nav class="topnav" aria-label="Primary">
+      <a class="nav-item active" href="#homepage">Homepage</a>
+      <a class="nav-item" href="#about">About Me</a>
+      <a class="nav-item" href="#news">News</a>
+      <a class="nav-item" href="#publications">Publications</a>
+      <a class="nav-item" href="#honors">Honors and Awards</a>
+      <a class="nav-item" href="#education">Educations</a>
+      <a class="nav-item" href="#talks">Invited Talks</a>
+      <a class="nav-item" href="#internships">Internships</a>
     </nav>
   </header>
 
-  <main>
-    <section class="section section-dark hero-section" id="top">
-      <div class="shell hero-shell">
-        <div class="hero-copy">
-          <p class="eyebrow">PhD Student / Hebei Normal University</p>
-          <h1 class="hero-title">Minghu Wang.</h1>
-          <p class="hero-subtitle">
-            Researching information retrieval, natural language processing,
-            and large language models.
-          </p>
-          <p class="body-copy hero-body">
-            I build and evaluate language-centered systems that help people
-            retrieve, reason over, and generate information more effectively.
-            My academic interests sit at the intersection of IR, NLP, and LLM
-            applications for practical intelligent systems.
-          </p>
+  <main class="page" id="homepage">
+    <aside class="sidebar">
+      <div class="profile-card">
+        <img
+          class="profile-photo"
+          src="assets/avatar.jpg"
+          alt="Portrait of Minghu Wang"
+        >
 
-          <div class="hero-actions">
-            <a class="button button-primary" href="#publications">Selected Work</a>
-            <a class="button button-secondary" href="mailto:wangminghu41@163.com">Contact</a>
-          </div>
+        <h1 class="profile-name">Minghu Wang</h1>
+        <p class="profile-affiliation">Hebei Normal University</p>
 
-          <div class="link-row">
-            <a
-              class="inline-link"
-              href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Google Scholar <span aria-hidden="true">&gt;</span>
-            </a>
-            <a
-              class="inline-link"
-              href="https://github.com/AlexWhisper/AlexWhisper"
-              target="_blank"
-              rel="noreferrer"
-            >
-              GitHub <span aria-hidden="true">&gt;</span>
-            </a>
-          </div>
-        </div>
+        <p class="profile-summary">
+          PhD student in Computer Science, focusing on Information Retrieval,
+          Natural Language Processing, and Large Language Models.
+        </p>
 
-        <div class="hero-visual">
-          <div class="portrait-stage">
-            <img
-              class="portrait-image"
-              src="assets/avatar.jpg"
-              alt="Portrait of Minghu Wang"
-            >
-          </div>
-
-          <div class="fact-grid">
-            <article class="fact-card">
-              <p class="fact-label">Affiliation</p>
-              <p class="fact-value">Hebei Normal University</p>
-            </article>
-            <article class="fact-card">
-              <p class="fact-label">Department</p>
-              <p class="fact-value">Computer Science</p>
-            </article>
-            <article class="fact-card">
-              <p class="fact-label">Location</p>
-              <p class="fact-value">Shijiazhuang, China</p>
-            </article>
-            <article class="fact-card">
-              <p class="fact-label">Focus</p>
-              <p class="fact-value">IR / NLP / LLM</p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="about">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="eyebrow">About</p>
-          <h2 class="section-title">
-            A research profile built with the clarity of a product page.
-          </h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="copy-block">
-            <p class="body-copy">
-              I am a PhD student in computer science with research interests in
-              information retrieval, natural language processing, and large
-              language models. I care about building systems that are not only
-              powerful, but also useful, reliable, and grounded in practical
-              research questions.
-            </p>
-            <p class="body-copy">
-              My work explores how retrieval and language modeling can be
-              combined to support better search, reasoning, and scientific
-              workflows. This page is intentionally simple: one place for my
-              background, my current directions, and the links that matter.
-            </p>
-          </div>
-
-          <div class="info-stack">
-            <article class="info-card">
-              <p class="info-label">Current Interests</p>
-              <h3>Retrieval-augmented language systems.</h3>
-              <p class="body-copy">
-                Designing pipelines that connect search, ranking, and language
-                generation in a coherent and trustworthy way.
-              </p>
-            </article>
-
-            <article class="info-card">
-              <p class="info-label">What I Value</p>
-              <h3>Useful methods over ornamental complexity.</h3>
-              <p class="body-copy">
-                I am especially interested in evaluation, interpretability, and
-                research outcomes that translate into usable tools and systems.
-              </p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="research">
-      <div class="shell">
-        <div class="section-heading section-heading-centered">
-          <p class="eyebrow">Research</p>
-          <h2 class="section-title">
-            Three directions I am actively building.
-          </h2>
-        </div>
-
-        <div class="tile-grid">
-          <article class="research-tile">
-            <p class="tile-index">01</p>
-            <h3>Information Retrieval</h3>
-            <p class="body-copy">
-              Improving search, ranking, and retrieval pipelines so users can
-              access relevant evidence more precisely and efficiently.
-            </p>
-          </article>
-
-          <article class="research-tile">
-            <p class="tile-index">02</p>
-            <h3>Natural Language Processing</h3>
-            <p class="body-copy">
-              Studying how text understanding and generation methods can better
-              support real-world language tasks and academic workflows.
-            </p>
-          </article>
-
-          <article class="research-tile">
-            <p class="tile-index">03</p>
-            <h3>Large Language Models</h3>
-            <p class="body-copy">
-              Exploring LLM-centered systems with a focus on robustness,
-              evaluation, and reliable knowledge use in downstream applications.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-light" id="publications">
-      <div class="shell">
-        <div class="section-heading">
-          <p class="eyebrow">Publications</p>
-          <h2 class="section-title">
-            Selected work, profiles, and placeholders for your featured papers.
-          </h2>
-          <p class="body-copy section-body-intro">
-            For a complete and up-to-date list of publications, please visit my
-            Google Scholar profile. The cards below can be replaced with your
-            representative papers whenever you want.
-          </p>
-        </div>
-
-        <div class="publication-grid">
-          <article class="publication-card">
-            <p class="publication-kind">Featured Profile</p>
-            <h3>Google Scholar</h3>
-            <p class="publication-meta">Publications / Citations / Updates</p>
-            <p class="body-copy">
-              Browse the most current list of papers, citation counts, and
-              recent academic output.
-            </p>
-            <a
-              class="inline-link inline-link-light"
-              href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Visit profile <span aria-hidden="true">&gt;</span>
-            </a>
-          </article>
-
-          <article class="publication-card">
-            <p class="publication-kind">Template</p>
-            <h3>Add your best conference paper</h3>
-            <p class="publication-meta">Authors / Conference / Year</p>
-            <p class="body-copy">
-              Replace this card with the work you most want visitors to see
-              first when they arrive on your homepage.
-            </p>
-          </article>
-
-          <article class="publication-card">
-            <p class="publication-kind">Template</p>
-            <h3>Add your strongest journal article</h3>
-            <p class="publication-meta">Authors / Journal / Year</p>
-            <p class="body-copy">
-              Use this space for a paper that represents the depth and maturity
-              of your ongoing research agenda.
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="contact">
-      <div class="shell contact-shell">
-        <div class="contact-copy">
-          <p class="eyebrow">Contact</p>
-          <h2 class="section-title">
-            Open to research discussion, collaboration, and academic exchange.
-          </h2>
-          <p class="body-copy">
-            If you would like to talk about information retrieval, NLP, LLMs,
-            or potential collaboration, feel free to reach out by email or
-            connect through my academic profiles.
-          </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="mailto:wangminghu41@163.com">Email Me</a>
-            <a
-              class="button button-secondary"
-              href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Scholar Profile
-            </a>
-          </div>
-        </div>
-
-        <div class="contact-panel">
-          <div class="contact-item">
-            <p class="fact-label">Email</p>
-            <a href="mailto:wangminghu41@163.com">wangminghu41@163.com</a>
-          </div>
-          <div class="contact-item">
-            <p class="fact-label">GitHub</p>
+        <ul class="profile-links">
+          <li>Shijiazhuang, China</li>
+          <li><a href="mailto:wangminghu41@163.com">Email</a></li>
+          <li>
             <a href="https://github.com/AlexWhisper/AlexWhisper" target="_blank" rel="noreferrer">
-              github.com/AlexWhisper
+              GitHub
             </a>
-          </div>
-          <div class="contact-item">
-            <p class="fact-label">Affiliation</p>
-            <p>Hebei Normal University</p>
-          </div>
-          <div class="contact-item">
-            <p class="fact-label">Location</p>
-            <p>Shijiazhuang, China</p>
-          </div>
-        </div>
+          </li>
+          <li>
+            <a
+              href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Google Scholar
+            </a>
+          </li>
+        </ul>
       </div>
-    </section>
+    </aside>
+
+    <div class="content">
+      <section class="intro-block section-anchor" id="about">
+        <p>
+          Hi! I am a PhD student in Computer Science at Hebei Normal
+          University. My research focuses on
+          <strong>Information Retrieval</strong>,
+          <strong>Natural Language Processing</strong>, and
+          <strong>Large Language Models</strong>.
+        </p>
+        <p>
+          I am interested in building reliable and practical language-centered
+          systems for search, understanding, and generation. I enjoy exploring
+          research questions that connect classical retrieval techniques with
+          modern neural and large-model methods.
+        </p>
+        <p>
+          I am open to academic collaboration, research discussion, and PhD
+          related communication. Feel free to reach out if you are interested
+          in related topics or potential collaboration opportunities.
+        </p>
+      </section>
+
+      <section class="content-section section-anchor" id="news">
+        <div class="section-header">
+          <h2>News</h2>
+        </div>
+
+        <ul class="timeline-list">
+          <li>
+            <span class="timeline-date">2026.04</span>
+            <span class="timeline-text">
+              Personal academic homepage redesigned and published on GitHub
+              Pages.
+            </span>
+          </li>
+          <li>
+            <span class="timeline-date">Template</span>
+            <span class="timeline-text">
+              Add your latest paper acceptance, submission, award, or project
+              update here.
+            </span>
+          </li>
+          <li>
+            <span class="timeline-date">Template</span>
+            <span class="timeline-text">
+              Add your internship, collaboration, or invited talk update here.
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content-section section-anchor" id="publications">
+        <div class="section-header">
+          <h2>Selected Publications</h2>
+        </div>
+
+        <div class="publication-list">
+          <article class="publication-item">
+            <div class="publication-figure">
+              <div class="figure-placeholder">Paper Figure</div>
+            </div>
+            <div class="publication-body">
+              <h3>
+                <a
+                  href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Full publication list on Google Scholar
+                </a>
+              </h3>
+              <p class="authors">Minghu Wang</p>
+              <p class="publication-links">
+                <a
+                  href="https://scholar.google.com/citations?user=8fsIM-YAAAAJ&hl=zh-CN&oi=sra"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Profile
+                </a>
+              </p>
+              <p class="publication-summary">
+                Visit my Google Scholar profile for the most up-to-date list of
+                papers, citations, and research output.
+              </p>
+            </div>
+          </article>
+
+          <article class="publication-item">
+            <div class="publication-figure">
+              <div class="figure-placeholder">Your Figure</div>
+            </div>
+            <div class="publication-body">
+              <h3>Add your representative paper title here</h3>
+              <p class="authors">Author 1, Author 2, Author 3</p>
+              <p class="publication-links">
+                <a href="#publications">Paper</a>
+                <a href="#publications">Code</a>
+                <a href="#publications">Project</a>
+              </p>
+              <p class="publication-summary">
+                Replace this block with the title, authors, venue, links, and a
+                2-3 sentence summary of one of your most representative papers.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="honors">
+        <div class="section-header">
+          <h2>Honors and Awards</h2>
+        </div>
+
+        <ul class="simple-list">
+          <li>Add your scholarships, awards, or competition results here.</li>
+        </ul>
+      </section>
+
+      <section class="content-section section-anchor" id="education">
+        <div class="section-header">
+          <h2>Educations</h2>
+        </div>
+
+        <div class="entry-list">
+          <article class="entry-item">
+            <div class="entry-time">Current</div>
+            <div class="entry-body">
+              <h3>PhD Student in Computer Science</h3>
+              <p>Hebei Normal University, Shijiazhuang, China</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section section-anchor" id="talks">
+        <div class="section-header">
+          <h2>Invited Talks</h2>
+        </div>
+
+        <ul class="simple-list">
+          <li>Add invited talks, seminar presentations, or academic visits here.</li>
+        </ul>
+      </section>
+
+      <section class="content-section section-anchor" id="internships">
+        <div class="section-header">
+          <h2>Internships</h2>
+        </div>
+
+        <ul class="simple-list">
+          <li>Add internships, visiting positions, or research assistantships here.</li>
+        </ul>
+      </section>
+    </div>
   </main>
 </body>
 </html>
